@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: monospace;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h4 {
+    color: white;
+}
