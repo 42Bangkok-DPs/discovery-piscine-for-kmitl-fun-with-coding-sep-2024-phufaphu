@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+<body>
+    <div class="background">
+        <button id="button"onclick="">Click me!</button>
+    </div>
+</body>
+<script>
+    let button = document.getElementById('button');
+    let background = document.querySelector('.background');
+    let colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'brown', 'black', 'white'];
+
+    button.addEventListener('click', () => {
+        let randomColor = colors[Math.floor(Math.random() * colors.length)];
+        background.style.backgroundColor = randomColor;
+    });
+</script>
+</html>
