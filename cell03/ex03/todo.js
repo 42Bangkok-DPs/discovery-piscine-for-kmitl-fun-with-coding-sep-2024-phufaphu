@@ -3,6 +3,7 @@ const todoList = document.getElementById('ft_list');
 function updateCookie(value) {
     setCookie('tasks', value);
 }
+
 function getCookie(key) {
     const cookies = document.cookie.split(";");
 

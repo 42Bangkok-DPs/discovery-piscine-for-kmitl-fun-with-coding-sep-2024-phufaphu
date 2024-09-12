@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Task Management</title>
+    <style>
+        body { font-family: monospace; max-width: 400px; margin: 20px auto; font-weight: bold; }
+        #ft_list { margin-top: 20px; }
+        .task { background: #f0f0f0; padding: 10px; margin: 5px 0; cursor: pointer; border-radius: 12px; }
+        .task:hover { background: #e0e0e0; }
+        button { padding: 5px; border: none; background: lightgreen; border-radius: 12px; cursor: pointer; width: 70px; font-family: monospace; font-weight: bold; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Task List</h1>
+    <button id="newTaskBtn">New</button>
+    <div id="ft_list"></div>
+</body>
+<script src="todo.js"></script>
+</html>
