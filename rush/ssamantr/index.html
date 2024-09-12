@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ssamrt</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth !important;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="bg-slate-100">
+    <nav class="w-full flex justify-center md:justify-between bg-slate-700 text-white py-3 px-16 text-xl fixed shadow">
+        <div class="flex items-center">
+            <h1 class="hidden md:block">SSAMANTR</h1>
+        </div>
+        <div class="flex items-center gap-10">
+            <a href="../index.html" class="transition hover:bg-slate-500 p-2 rounded-full">Home</a>
+            <a href="#profile" class="transition hover:bg-slate-500 p-2 rounded-full">Profile</a>
+            <a href="#skill" class="transition hover:bg-slate-500 p-2 rounded-full">Skill</a>
+            <a href="#contact" class="transition hover:bg-slate-500 p-2 rounded-full">Contact</a>
+        </div>
+    </nav>
+    <section class="w-full h-dvh" id="profile">
+        <div class="w-full h-full flex gap-4 justify-center items-center flex-col md:flex-row">
+            <div>
+                <img src="../static/@me.jpg" alt="ssamantr" class=" h-60 rounded border shadow" />
+            </div>
+            <div>
+                <p class="text-6xl font-bold">Hello, I'm</p>
+                <p class="text-6xl font-bold">SSAMANTR</p>
+                <p class="text-2xl">Siwapat Samantrkulchai</p>
+            </div>
+        </div>
+    </section>
+    <section class="w-full min-h-dvh flex md:justify-center items-center flex-col gap-4 px-4" id="skill">
+        <h1 class="text-5xl font-bold">Skill & Project</h1>
+        <div class="w-full flex flex-col md:flex-row gap-4">
+            <div class="w-full md:w-1/2 flex flex-col gap-4">
+                <div class="w-full h-[20rem] rounded shadow p-4 bg-white border">
+                    <h1 class="text-3xl font-bold">Frontend</h1>
+                    <div class="w-full flex justify-center gap-10 mt-3">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain"
+                                alt="html5-without-wordmark-color-logo-14D252D878-seeklogo">
+                            <p>HTML</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain" alt="css-3-logo-023C1A7171-seeklogo">
+                            <p>CSS</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain"
+                                alt="javascript-js-logo-2949701702-seeklogo">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center gap-10 mt-3">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/S/svelte-logo-E3497608CB-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain" alt="svelte-logo-E3497608CB-seeklogo">
+                            <p>Svelte</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/V/vuejs-logo-17D586B587-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain" alt="vuejs-logo-17D586B587-seeklogo">
+                            <p>Vue</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain"
+                                alt="tailwind-css-logo-5AD4175897-seeklogo">
+                            <p>TailwindCSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-[20rem] rounded shadow p-4 bg-white border">
+                    <h1 class="text-3xl font-bold">Backend</h1>
+                    <div class="w-full h-full flex justify-center items-center">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/M/mysql-logo-69B39F7D18-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain" alt="mysql-logo-69B39F7D18-seeklogo">
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col gap-4">
+                <div class="w-full h-[41rem] rounded shadow p-4 bg-white border">
+                    <h1 class="text-3xl font-bold">Sairahut IT22</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint suscipit quos
+                        laboriosam reiciendis cumque distinctio, quae fugit possimus asperiores. Pariatur ipsa maiores
+                        officia ipsam minima iure deleniti error dicta.</p>
+                    <div class="flex justify-center my-3">
+                        <img src="../static/sairahutIT22.png" alt="sairahutIT22" class="h-[28rem] rounded shadow">
+                    </div>
+                    <div class="flex justify-end underline text-yellow-400">
+                        <a href="https://sairahut.it.kmitl.ac.th/">Try this.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full min-h-dvh flex md:justify-center items-center flex-col gap-4 px-4" id="contact">
+        <h1 class="text-5xl font-bold">Contact</h1>
+        <div class="w-full flex flex-col md:flex-row gap-4">
+            <div class="w-full flex flex-col gap-4">
+                <div class="w-full flex justify-center gap-10 mt-3">
+                    <a href="https://www.facebook.com/bass.tabletennis/" class="transition hover:-translate-y-1">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/F/facebook-icon-logo-03865A9BA2-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain"
+                                alt="facebook-icon-logo-03865A9BA2-seeklogo">
+                            <p>Facebook</p>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/siwapat_bass/" class="transition hover:-translate-y-1">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/I/instagram-new-2016-logo-D9D42A0AD4-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain"
+                                alt="instagram-new-2016-logo-D9D42A0AD4-seeklogo">
+                            <p>Instagram</p>
+                        </div>
+                    </a>
+                    <a href="https://discord.gg/jUgyRAuX" class="transition hover:-translate-y-1">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/D/discord-logo-7A1EC3216C-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain" alt="discord-logo-7A1EC3216C-seeklogo">
+                            <p>Discord</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Bss-bass" class="transition hover:-translate-y-1">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain" alt="github-logo-5F384D0265-seeklogo">
+                            <p>GitHub</p>
+                        </div>
+                    </a>
+                    <!-- gmail -->
+                    <a href="mailto:sivapat@gmail.com" class="transition hover:-translate-y-1">
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="https://seeklogo.com/images/G/gmail-new-2020-logo-32DBE11BB4-seeklogo.com.png"
+                                class="h-[5.5rem] aspect-square object-contain" alt="gmail-logo-5A6C3A7A0F-seeklogo">
+                            <p>Gmail</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="w-full flex justify-center items-center bg-slate-700 text-white py-3 px-16 text-xl">
+        <p>© 2021 SSAMANTR</p>
+    </footer>
 </body>
+
 </html>
