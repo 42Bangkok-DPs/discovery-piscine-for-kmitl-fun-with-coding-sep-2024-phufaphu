@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rush Project Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-
-</body>
+    <title>Rush Project by pmontara & ssamantr</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css "
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: #3586ff;
+        overflow: hidden;
+      }
+      section .air {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+        background-size: 1000px 100px;
+      }
+      section .air.air1 {
+        animation: wave 30s linear infinite;
+        z-index: 1000;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+      }
+      section .air.air2 {
+        animation: wave2 15s linear infinite;
+        z-index: 999;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom: 10px;
+      }
+      section .air.air3 {
+        animation: wave 30s linear infinite;
+        z-index: 998;
+        opacity: 0.2;
+        animation-delay: -2s;
+        bottom: 15px;
+      }
+      section .air.air4 {
+        animation: wave2 5s linear infinite;
+        z-index: 997;
+        opacity: 0.7;
+        animation-delay: -5s;
+        bottom: 20px;
+      }
+      @keyframes wave {
+        0% {
+          background-position-x: 0px;
+        }
+        100% {
+          background-position-x: 1000px;
+        }
+      }
+      @keyframes wave2 {
+        0% {
+          background-position-x: 0px;
+        }
+        100% {
+          background-position-x: -1000px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="w-full h-dvh bg-sky-100 flex flex-col gap-4 justify-center items-center"
+    >
+      <h1 class="text-6xl font-bold">Rush Project</h1>
+      <div class="space-x-4">
+        <a href="pmontara/">
+          <button
+            class="relative rounded px-5 py-2.5 overflow-hidden group bg-[#3f72af] relative hover:bg-gradient-to-r hover:from-[#3f72af] hover:to-[#6594cb] text-white hover:ring-2 hover:ring-offset-2 hover:ring-[#6594cb] transition-all ease-out duration-300"
+          >
+            <span
+              class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+            ></span>
+            <span class="relative text-base font-semibold">PMONTARA</span>
+          </button>
+        </a>
+        <a href="ssamantr/">
+          <button
+            class="relative rounded px-5 py-2.5 overflow-hidden group bg-slate-500 relative hover:bg-gradient-to-r hover:from-slate-500 hover:to-slate-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-slate-400 transition-all ease-out duration-300"
+          >
+            <span
+              class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"
+            ></span>
+            <span class="relative text-base font-semibold">SSAMANTR</span>
+          </button>
+        </a>
+      </div>
+      <div>
+        <div class="air air1"></div>
+        <div class="air air2"></div>
+        <div class="air air3"></div>
+        <div class="air air4"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
+  </body>
 </html>
