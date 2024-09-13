@@ -14,10 +14,12 @@
 </body>
 <script>
     $(document).ready(function() {
-        let colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'brown', 'black', 'white'];
-
+        function getRandomHexColor() {
+            let hex = '#' + Math.floor(Math.random()*16777215).toString(16);
+            return hex;
+        }
         $('#button').on('click', function() {
-            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            let randomColor = getRandomHexColor();
             $('.background').css('background-color', randomColor);
         });
     });
